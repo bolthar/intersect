@@ -1,0 +1,4 @@
+
+class MainView < FreightView
+  
+end
