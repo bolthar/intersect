@@ -1,0 +1,4 @@
+
+class ShapesViewModel < FreightViewModel
+  
+end

@@ -1,0 +1,4 @@
+
+class CirclePropertiesView < FreightView
+  
+end

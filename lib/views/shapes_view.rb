@@ -1,0 +1,4 @@
+
+class ShapesView < FreightView
+  
+end

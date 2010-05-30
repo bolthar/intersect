@@ -1,0 +1,5 @@
+
+class LinePropertiesViewModel < FreightViewModel
+
+  
+end
