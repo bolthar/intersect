@@ -11,6 +11,7 @@ class PolygonPropertiesViewModel < FreightViewModel
   def on_add
     @points << Point.new([0,0])
     @view.update
+    @view.commit
   end
   
   def on_delete(point)
@@ -21,7 +22,7 @@ class PolygonPropertiesViewModel < FreightViewModel
 
   def get_shape
     @view.commit
-    p Polygon.new(@points.map { |point| [point.x, point.y]}.flatten)
+    return Polygon.new(*@points.map { |point| [point.x, point.y]})
   end
   
 end
