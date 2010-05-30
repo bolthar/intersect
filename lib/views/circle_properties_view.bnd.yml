@@ -1,0 +1,15 @@
+
+center_x:
+  property : text
+  path     : center_x
+  converter: float
+
+center_y:
+  property : text
+  path     : center_y
+  converter: float
+
+radius:
+  property : text
+  path     : radius
+  converter: float

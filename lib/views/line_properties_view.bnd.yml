@@ -1,0 +1,33 @@
+
+points_box:
+  property : visible
+  path     : second_point_visible?
+
+slope_box:
+  property : visible
+  path     : slope_visible?
+
+first_point_x:
+  property : text
+  path     : point_one_x
+  converter: float
+
+first_point_y:
+  property : text
+  path     : point_one_y
+  converter: float
+
+second_point_x:
+  property : text
+  path     : point_two_x
+  converter: float
+
+second_point_y:
+  property : text
+  path     : point_two_y
+  converter: float
+
+slope:
+  property : text
+  path     : slope
+  converter: float

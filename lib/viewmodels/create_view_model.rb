@@ -8,7 +8,7 @@ class CreateViewModel < FreightViewModel
   end
 
   def on_create
-    p "create"
+    p properties.get_shape
   end
   
 end
