@@ -1,5 +1,5 @@
 
-class Polygon
+class Polygon < Shape
 
   attr_reader :segments
   
@@ -14,6 +14,11 @@ class Polygon
       end
       @segments << segment
     end
+  end
+
+  def description
+    return "Polygon - #{@segments.length} segment(s)" if @segments.length > 1
+    return "Point - [#{@segment.first.point_one.x}, #{@segment.first.point_one.y}]"
   end
 
 end

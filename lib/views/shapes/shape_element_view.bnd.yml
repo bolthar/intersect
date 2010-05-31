@@ -1,0 +1,10 @@
+
+title:
+  property : text
+  path     : value.description
+
+intersections:
+  property : elements
+  path     : intersections
+  columns:
+    - Intersects With: description

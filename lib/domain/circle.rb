@@ -1,5 +1,5 @@
 
-class Circle
+class Circle < Shape
 
   attr_reader :center
   attr_reader :radius
@@ -9,4 +9,8 @@ class Circle
     @radius = radius.to_f
   end
 
+  def description
+    return "Circle - center = [#{@center.x}, #{@center.y}], radius = #{@radius}"
+  end
+  
 end

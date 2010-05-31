@@ -1,0 +1,5 @@
+
+class ShapeElementView < FreightElementView
+
+  
+end

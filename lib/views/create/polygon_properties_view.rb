@@ -9,6 +9,7 @@ class PolygonPropertiesView < FreightView
   end
 
   def commit
+    super
     points.elements.each do |el|
       el.commit
     end

@@ -1,5 +1,5 @@
 
-class StandardLine
+class StandardLine < Shape
 
   def initialize(point_one, point_two)
     @point_one = point_one
@@ -38,6 +38,10 @@ class StandardLine
     x = -((line.a*c)+(a*line.c))/((a*line.b)-(line.a*b))
     y = ((-b*x)-c)/a
     return Point.new([x, y])
+  end
+
+  def description
+    return "Line - a = #{a}, b = #{b}, c = #{c}"
   end
 
 end
