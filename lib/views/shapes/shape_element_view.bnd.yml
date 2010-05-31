@@ -5,6 +5,6 @@ title:
 
 intersections:
   property : elements
-  path     : intersections
+  path     : value.intersections
   columns:
     - Intersects With: description

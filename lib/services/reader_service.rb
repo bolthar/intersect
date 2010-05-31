@@ -2,16 +2,15 @@
 class ReaderService < FreightService
 
   def read_shapes(filename)
-    return @shapes if @shapes
-    @shapes = []
+    shapes = []
     File.open(filename, 'r').lines.each do |line|
       unless line.strip.empty?
         shape_class = get_shape_class(line.split(':')[0])
         params      = get_parameters(line.split(':')[1])
-        @shapes << shape_class.new(*params)
+        shapes << shape_class.new(*params)
       end
     end
-    return @shapes
+    return shapes
   end
 
   def get_shape_class(class_name)

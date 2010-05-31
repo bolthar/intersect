@@ -2,6 +2,7 @@
 class ShapesViewModel < FreightViewModel
 
   service :intersector
+  service :reader
 
   attr_reader :shapes
   
@@ -19,6 +20,12 @@ class ShapesViewModel < FreightViewModel
       end
     end
     @view.update
+  end
+
+  def on_load(filename)
+    @reader.read_shapes(filename).each do |shape|
+      add_shape(shape)
+    end
   end
   
 end

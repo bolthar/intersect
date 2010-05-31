@@ -9,6 +9,27 @@
         <property name="visible">True</property>
         <property name="toolbar_style">both</property>
         <child>
+          <object class="GtkToolButton" id="load">
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">Open file...</property>
+            <property name="use_underline">True</property>
+            <property name="stock_id">gtk-open</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="homogeneous">True</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkSeparatorToolItem" id="toolbutton2">
+            <property name="visible">True</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="homogeneous">True</property>
+          </packing>
+        </child>
+        <child>
           <object class="GtkToolButton" id="display">
             <property name="visible">True</property>
             <property name="label" translatable="yes">Display</property>
