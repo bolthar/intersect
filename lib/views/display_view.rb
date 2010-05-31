@@ -1,0 +1,6 @@
+
+class DisplayView < FreightView
+
+  
+
+end

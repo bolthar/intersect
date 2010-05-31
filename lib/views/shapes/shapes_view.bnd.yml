@@ -3,3 +3,7 @@ shapes:
   property : elements
   path     : shapes
   element  : shape
+
+display:
+  property : sensitive
+  path     : can_show_display?

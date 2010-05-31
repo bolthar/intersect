@@ -8,6 +8,7 @@ class ShapesViewModel < FreightViewModel
   
   def initialize
     @shapes = []
+    @view.update
   end
 
   def add_shape(shape)
@@ -26,6 +27,14 @@ class ShapesViewModel < FreightViewModel
     @reader.read_shapes(filename).each do |shape|
       add_shape(shape)
     end
+  end
+
+  def on_display
+    dialog :display, @shapes
+  end
+
+  def can_show_display?
+    return @shapes.length != 0
   end
   
 end
